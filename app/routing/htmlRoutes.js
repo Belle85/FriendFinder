@@ -15,7 +15,6 @@ module.exports = function(app){
     //If not matching route is found then defautl to Home.
     app.get("/", function(req,res) {
         console.log("This is my home page");
-        res.send("This is my home page");
         res.sendFile(path.join(__dirname, "../public/home.html"));
     })
 }
