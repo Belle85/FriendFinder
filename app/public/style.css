@@ -30,8 +30,13 @@ body{
     background: rgb(177, 177, 223);
     margin: auto;
     margin-top: 40px;
+    margin-bottom:40px;
     padding: 15px;  
     opacity:0.9;
+}
+
+.row{
+    margin: 20px 0px 10px 0px;
 }
 
 p{
@@ -61,4 +66,8 @@ p{
 
 label{
     font-size:9px;
+}
+
+#submitButton{
+    margin:auto;
 }

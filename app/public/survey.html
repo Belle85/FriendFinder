@@ -2,16 +2,16 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" conTent="width=device-width, initial-scale=1.0">
+    <meta http-esuiv="X-UA-Compatible" conTent="ie=edge">
     <title>Friend Finder</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B"
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkws/Z5nLIefvesRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B"
         crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootswatch/4.1.3/lux/bootstrap.min.css">
-    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+    <script src="https://code.jsuery.com/jsuery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
         crossorigin="anonymous"></script>
     <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
-    <!-- <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em"
+    <!-- <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFsy8fFScvbHFLtbvScb8AjopnFD+iEs7wo/CG0xlczd+2O/em"
         crossorigin="anonymous"></script> -->
 </head>
 
@@ -24,29 +24,29 @@
                     <div class="jumbotron jumbotron-fluid text-center">
                         <h1 class="display-3 text-center">Friend Finder Quizz</h1>
                         <p class="lead text-center">
-                            <a class="btn btn-primary btn-lg" href="#" role="button">Go to Homepage.</a>
+                            <a class="btn btn-primary btn-lg" href="../home.html" role="button">Go to Homepage.</a>
                         </p>
                     </div>
                 </div>
                 <div class="col-md-1 col-sm-1"></div>
-
             </div>
 
             <!-- User personal Info Input -->
             <div class="row" id="userInfo">
                 <div class="col-md-1 col-sm-1"></div>
                 <div class="col-lg-10 col-md-10">
-                    <h2>About you: </h2> <hr>
-                        <div class="form-group">
-                            <p class="aboutYouLabel">Name</p>
-                            <label for="required">Required</label>
-                            <input type="text" class="form-control" id="userName" placeholder="Enter your name.">
-                        </div>
-                        <div class="form-group">
-                            <p class="aboutYouLabel">Link to your Photo</p>
-                            <label for="required">Required</label>
-                            <input type="text" class="form-control" id="userPhoto" placeholder="Provide link to your photo">
-                        </div>
+                    <h2>About you: </h2>
+                    <hr>
+                    <div class="form-group">
+                        <p class="aboutYouLabel">Name</p>
+                        <label for="Required">Required</label>
+                        <input type="text" class="form-control" id="userName" placeholder="Enter your name.">
+                    </div>
+                    <div class="form-group">
+                        <p class="aboutYouLabel">Link to your Photo</p>
+                        <label for="Required">Required</label>
+                        <input type="text" class="form-control" id="userPhoto" placeholder="Provide link to your photo">
+                    </div>
                 </div>
                 <div class="col-md-1 col-sm-1"></div>
             </div>
@@ -56,43 +56,228 @@
     <!-- Quizz Section-->
     <div class="container container-fluid" id="quizzSection">
 
-        <!-- QuestionOne -->
-        <div class="row" id="q1">
+        <!-- StatementOne -->
+        <div class="row" id="s1">
             <div class="col-md-1 col-sm-1"></div>
             <div class="col-lg-10 col-md-10">
-                <h2>Questions:</h2>
+                <h2>Statements:</h2>
                 <hr>
                 <div class="form-group">
-                    <p class="questions" id="questionOne">Question One: Your mind is always buzzing with unexplored
+                    <p class="Statements" id="StatementOne">Statement One: Your mind is always buzzing with unexplored
                         ideas and plans.</p>
-                    <label for="exampleSelect2">Select an option.</label>
-                    <select class="form-control chosen-select" id="exampleSelect1">
+                    <label for="selectOption">Select an option.</label>
+                    <select class="form-control chosen-select" id="s1Answer">
                         <option>1 (Stongly Disagree)</option>
                         <option>2</option>
                         <option>3</option>
                         <option>4</option>
                         <option>5 (Stongly Agree)</option>
                     </select>
+                    <hr>
                 </div>
             </div>
             <div class="col-md-1 col-sm-1"></div>
         </div>
 
-        <!-- QuestionTwo -->
-        <div class="row" id="q2">
+        <!-- StatementTwo -->
+        <div class="row" id="s2">
             <div class="col-md-1 col-sm-1"></div>
             <div class="col-lg-10 col-md-10">
-                <p class="questions" id="questionTwo">Generally speaking, you rely more on your experience than your
-                    imagination.</p>
+                <div class="form-group">
+                    <p class="Statements" id="StatementTwo">Statement Two: Generally speaking, you rely more on your
+                        experience than your imagination.</p>
+                    <label for="selectOption">Select an option.</label>
+                    <select class="form-control chosen-select" id="s2Answer">
+                        <option>1 (Stongly Disagree)</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5 (Stongly Agree)</option>
+                    </select>
+                    <hr>
+                </div>
             </div>
             <div class="col-md-1 col-sm-1"></div>
         </div>
-    </div>
-    </div>
 
+        <!-- StatementThree -->
+        <div class="row" id="s3">
+            <div class="col-md-1 col-sm-1"></div>
+            <div class="col-lg-10 col-md-10">
+                <div class="form-group">
+                    <p class="Statements" id="StatementThree">Statement Three: You find it easy to stay relaxed and
+                        focused even when there is some pressure.</p>
+                    <label for="selectOption">Select an option.</label>
+                    <select class="form-control chosen-select" id="s3Answer">
+                        <option>1 (Stongly Disagree)</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5 (Stongly Agree)</option>
+                    </select>
+                    <hr>
+                </div>
+            </div>
+            <div class="col-md-1 col-sm-1"></div>
+        </div>
 
+        <!-- StatementFour -->
+        <div class="row" id="s4">
+            <div class="col-md-1 col-sm-1"></div>
+            <div class="col-lg-10 col-md-10">
+                <div class="form-group">
+                    <p class="Statements" id="StatementFour">Statement Four: You rarely do something just out of sheer
+                        curiosity.</p>
+                    <label for="selectOption">Select an option.</label>
+                    <select class="form-control chosen-select" id="s4Answer">
+                        <option>1 (Stongly Disagree)</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5 (Stongly Agree)</option>
+                    </select>
+                    <hr>
+                </div>
+            </div>
+            <div class="col-md-1 col-sm-1"></div>
+        </div>
+
+        <!-- StatementFive-->
+        <div class="row" id="s5">
+            <div class="col-md-1 col-sm-1"></div>
+            <div class="col-lg-10 col-md-10">
+                <div class="form-group">
+                    <p class="Statements" id="StatementFive">Statement Five: People can rarely upset you.</p>
+                    <label for="selectOption">Select an option.</label>
+                    <select class="form-control chosen-select" id="s4Answer">
+                        <option>1 (Stongly Disagree)</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5 (Stongly Agree)</option>
+                    </select>
+                    <hr>
+                </div>
+            </div>
+            <div class="col-md-1 col-sm-1"></div>
+        </div>
+
+        <!-- StatementSix-->
+        <div class="row" id="s6">
+            <div class="col-md-1 col-sm-1"></div>
+            <div class="col-lg-10 col-md-10">
+                <div class="form-group">
+                    <p class="Statements" id="StatementSix">Statement Six: It is ofTen difficult for you to relate
+                        to other people’s feelings.</p>
+                    <label for="selectOption">Select an option.</label>
+                    <select class="form-control chosen-select" id="s4Answer">
+                        <option>1 (Stongly Disagree)</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5 (Stongly Agree)</option>
+                    </select>
+                    <hr>
+                </div>
+            </div>
+            <div class="col-md-1 col-sm-1"></div>
+        </div>
+
+        <!-- StatementSeven-->
+        <div class="row" id="s7">
+            <div class="col-md-1 col-sm-1"></div>
+            <div class="col-lg-10 col-md-10">
+                <div class="form-group">
+                    <p class="Statements" id="StatementSeven">Statement Seven: In a discussion, truth should be more
+                        important than people’s sensitivities.</p>
+                    <label for="selectOption">Select an option.</label>
+                    <select class="form-control chosen-select" id="s4Answer">
+                        <option>1 (Stongly Disagree)</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5 (Stongly Agree)</option>
+                    </select>
+                    <hr>
+                </div>
+            </div>
+            <div class="col-md-1 col-sm-1"></div>
+        </div>
+
+        <!-- StatementEight-->
+        <div class="row" id="s8">
+            <div class="col-md-1 col-sm-1"></div>
+            <div class="col-lg-10 col-md-10">
+                <div class="form-group">
+                    <p class="Statements" id="StatementEight">Statement Eight: You rarely get carried away by fantasies
+                        and ideas.</p>
+                    <label for="selectOption">Select an option.</label>
+                    <select class="form-control chosen-select" id="s4Answer">
+                        <option>1 (Stongly Disagree)</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5 (Stongly Agree)</option>
+                    </select>
+                    <hr>
+                </div>
+            </div>
+            <div class="col-md-1 col-sm-1"></div>
+        </div>
+
+        <!-- StatementNine-->
+        <div class="row" id="s9">
+            <div class="col-md-1 col-sm-1"></div>
+            <div class="col-lg-10 col-md-10">
+                <div class="form-group">
+                    <p class="Statements" id="StatementNine">Statement Nine: You think that everyone’s views should be
+                        respected regardless of whether they are supported by facts or not. </p>
+                    <label for="selectOption">Select an option.</label>
+                    <select class="form-control chosen-select" id="s4Answer">
+                        <option>1 (Stongly Disagree)</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5 (Stongly Agree)</option>
+                    </select>
+                    <hr>
+                </div>
+            </div>
+            <div class="col-md-1 col-sm-1"></div>
+        </div>
+
+        <!-- StatementTen-->
+        <div class="row" id="s10">
+            <div class=" col-md-1 col-sm-1"></div>
+            <div class="col-lg-10 col-md-10">
+                <div class="form-group">
+                    <p class="Statements" id="StatementTen">Statement Ten: You feel more energetic after spending time
+                        with
+                        a group of people. </p>
+                    <label for="selectOption">Select an option.</label>
+                    <select class="form-control chosen-select" id="s4Answer">
+                        <option>1 (Stongly Disagree)</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5 (Stongly Agree)</option>
+                    </select>
+                    <hr>
+                </div>
+            </div>
+            <div class="col-md-1 col-sm-1"></div>
+        </div>
+
+        <!-- SubmitButton-->
+        <div class="row">
+                <div class=" col-md-1 col-sm-1"></div>
+                <div class="col-lg-10 col-md-10">
+                        <button type="submit" class="btn btn-primary" id="submitButton">Submit</button>
+                    </div>
+                </div>
+                <div class="col-md-1 col-sm-1"></div>
+            </div>
     </div>
-
 </body>
 
 </html>
