@@ -1,5 +1,12 @@
 body{
+    background: #d2b7b7;
+}
+
+
+#homeBckg,
+#sectionI{
     background: url("../public/images/friends.jpg");
+    padding-bottom:40px;
 }
 
 .jumbotron{
@@ -7,5 +14,51 @@ body{
     /* height: 400px; */
     width: 100%;
     margin-top: 80px;
+    margin-bottom:80px;
     opacity:0.9;
+}
+
+#userInfo{
+    background: rgb(94, 94, 143);
+    margin: auto;
+    padding: 15px;
+    
+    opacity:0.9;
+}
+
+#quizzSection{
+    background: rgb(177, 177, 223);
+    margin: auto;
+    margin-top: 40px;
+    padding: 15px;  
+    opacity:0.9;
+}
+
+p{
+    font-size: 20px;
+    margin-bottom:0px;
+}
+
+.aboutYouLabel{
+    font-size: 20px; 
+}
+
+.questions{
+    color: white;
+}
+
+/* #q1{
+    background:green;
+}
+
+#q2{
+    background: red;
+} */
+
+#exampleSelect1{
+    font-size: 11px;
+}
+
+label{
+    font-size:9px;
 }
